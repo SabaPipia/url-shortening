@@ -1,0 +1,23 @@
+.hero {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 30px;
+}
+.hero__header {
+  font-weight: 800;
+  font-size: 65px;
+  color: #1c1d29;
+}
+.hero__more-info {
+  margin: 20px 0px;
+  color: #afafaf;
+  font-weight: 500;
+  font-size: 18px;
+}
+.hero__button-wrapper button {
+  font-size: 18px;
+  padding-right: 40px;
+  padding-left: 40px;
+}

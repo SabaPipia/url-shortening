@@ -1,0 +1,24 @@
+.boost-links {
+  background-image: url("../../public/bg-boost-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: hsl(257, 27%, 26%);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  h2 {
+    color: #fff;
+    font-size: 29px;
+    font-weight: 700;
+  }
+  .boost-links__button-wrapper {
+    button {
+      padding: 15px 40px;
+      font-size: 19px;
+      // width: 150%;
+    }
+  }
+}
