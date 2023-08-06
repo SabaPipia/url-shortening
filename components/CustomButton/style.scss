@@ -1,0 +1,13 @@
+.btn {
+  background-color: hsl(180, 66%, 49%);
+  border: none;
+  border-radius: 30px;
+  padding: 12px 20px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  &:hover,
+  &:active {
+    background-color: hsl(180, 54%, 75%);
+  }
+}
