@@ -15,7 +15,6 @@ function Footer() {
       <div className="footer_company-logo">
         <Image src={Logo} alt="Company Logo" />
       </div>
-      {/* <div className="footer_links-side"> */}
       <div className="footer_links">
         {footerLinks.map((item) => {
           return (
@@ -36,9 +35,6 @@ function Footer() {
         <Image src={Pinterest} alt="Pinterest logo" />
         <Image src={Instagram} alt="Instagram logo" />
       </div>
-      {/* <div className="footer__socials-images">
-        </div> */}
-      {/* </div> */}
     </footer>
   );
 }
