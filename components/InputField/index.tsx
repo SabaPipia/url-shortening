@@ -6,7 +6,7 @@ import CustomButton from "../CustomButton";
 import { fetchData } from "@/utils";
 
 function InputField() {
-  const [url, setUrl] = useState("");
+  const [url, setUrl] = useState<any>();
   const ref = useRef("");
   const handleClick = () => {
     fetchData({
@@ -30,7 +30,7 @@ function InputField() {
         <div className="short-link">
           <h5 className="main-url">{ref.current}</h5>
           <div className="short-link__copy-side">
-            <h5 className="short-url">{url.result?.full_short_link3}</h5>
+            <h5 className="short-url">{url.result.full_short_link3}</h5>
             <div>
               <CustomButton>Copy</CustomButton>
             </div>
