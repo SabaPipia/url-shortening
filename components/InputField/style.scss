@@ -33,3 +33,23 @@
   padding: 15px 11px;
   font-size: 18px;
 }
+.short-link {
+  background-color: #fff;
+  box-shadow: 0px 0px 20px rgba(28, 26, 43, 0.219);
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.short-link__copy-side {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  .short-url {
+    color: hsl(214, 100%, 50%);
+    font-weight: 600;
+  }
+}

@@ -15,6 +15,9 @@
 .footer_links {
   display: flex;
   gap: 40px;
+  img {
+    cursor: pointer;
+  }
 }
 
 .footer-links__sections {
@@ -32,9 +35,9 @@
   ul a {
     color: #b3b3b3;
     text-decoration: none;
+    &:hover,
+    &:active {
+      color: hsl(180, 54%, 75%);
+    }
   }
-}
-.footer__socials-images {
-  display: flex;
-  gap: 30px;
 }
