@@ -1,9 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import rec from "@/public/icon-brand-recognition.svg";
 import { CardProps } from "@/types";
 import "./style.scss";
-import { StatisticsCardsContent } from "@/constants";
 
 function Card({ className, title, content, img }: CardProps) {
   return (
