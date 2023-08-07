@@ -7,6 +7,9 @@ export interface CustomButtonProps {
 
 export interface CardProps {
   className: string;
+  title: string;
+  content: string;
+  img: string;
 }
 export interface FetchDataProps {
   url?: string;

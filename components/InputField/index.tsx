@@ -1,18 +1,25 @@
 "use client";
 
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./style.scss";
 import CustomButton from "../CustomButton";
 import { fetchData } from "@/utils";
+import { setTimeout } from "timers/promises";
 
 function InputField() {
   const [url, setUrl] = useState<any>();
+  const [copied, setCopied] = useState<boolean>(false);
+
   const ref = useRef("");
   const handleClick = () => {
     fetchData({
       url: ref.current,
       setUrl,
     });
+  };
+  const handleCopy = () => {
+    navigator.clipboard.writeText(url?.result.full_short_link);
+    setCopied(true);
   };
   return (
     <div className="container">
@@ -32,7 +39,9 @@ function InputField() {
           <div className="short-link__copy-side">
             <h5 className="short-url">{url.result.full_short_link3}</h5>
             <div>
-              <CustomButton>Copy</CustomButton>
+              <CustomButton handleClick={handleCopy}>
+                {copied ? "Copied" : "Copy"}
+              </CustomButton>
             </div>
           </div>
         </div>
