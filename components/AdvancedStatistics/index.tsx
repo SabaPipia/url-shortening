@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "./Card";
 import "./style.scss";
+import { StatisticsCardsContent } from "@/constants";
 
 function AdvancedStatistics() {
   return (
@@ -14,9 +15,14 @@ function AdvancedStatistics() {
       </div>
       <div className="statistics__cards">
         <div className="statistics__background-line"></div>
-        <Card className="start" />
-        <Card className="center" />
-        <Card className="end" />
+        {StatisticsCardsContent.map((item) => (
+          <Card
+            className={item.className}
+            title={item.title}
+            content={item.content}
+            img={item.icon}
+          />
+        ))}
       </div>
     </div>
   );
