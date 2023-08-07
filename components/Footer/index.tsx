@@ -30,10 +30,12 @@ function Footer() {
             </div>
           );
         })}
-        <Image src={Facebook} alt="Facebook logo" />
-        <Image src={Twitter} alt="Twitter logo" />
-        <Image src={Pinterest} alt="Pinterest logo" />
-        <Image src={Instagram} alt="Instagram logo" />
+        <div className="footer-links__social-icons">
+          <Image src={Facebook} alt="Facebook logo" />
+          <Image src={Twitter} alt="Twitter logo" />
+          <Image src={Pinterest} alt="Pinterest logo" />
+          <Image src={Instagram} alt="Instagram logo" />
+        </div>
       </div>
     </footer>
   );

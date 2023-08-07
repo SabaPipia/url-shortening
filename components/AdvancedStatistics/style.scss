@@ -44,3 +44,52 @@
   transform: translate(-0%, -50%);
   z-index: -99;
 }
+@media (max-width: 1300px) {
+  .statistics__cards {
+    height: 400px;
+  }
+}
+@media (max-width: 1200px) {
+  .statistics {
+    gap: 20px;
+  }
+  .statistics__cards {
+    gap: 20px;
+  }
+}
+@media (max-width: 1000px) {
+  .statistics__cards {
+    gap: 5px;
+  }
+}
+@media (max-width: 900px) {
+  .statistics__cards {
+    grid-template-columns: 1fr;
+    height: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .statistics {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 450px) {
+  .statistics__cards {
+    gap: 50px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  .statistics__content {
+    text-align: center;
+    p {
+      width: auto;
+    }
+  }
+  .statistics__background-line {
+    height: 100%;
+    width: 7px;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
+}

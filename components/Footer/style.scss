@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
   background-color: hsl(260, 8%, 14%);
-  height: 200px;
   padding-top: 60px;
 }
 .footer_company-logo {
@@ -10,7 +9,6 @@
 }
 .footer_links-side {
   display: flex;
-  // gap: 0px;
 }
 .footer_links {
   display: flex;
@@ -19,7 +17,10 @@
     cursor: pointer;
   }
 }
-
+.footer-links__social-icons {
+  display: flex;
+  gap: 20px;
+}
 .footer-links__sections {
   margin-right: 60px;
   h4 {
@@ -39,5 +40,45 @@
     &:active {
       color: hsl(180, 54%, 75%);
     }
+  }
+}
+@media (max-width: 1300px) {
+  .footer_links {
+    gap: 20px;
+  }
+  .footer-links__sections {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 900px) {
+  .footer_links {
+    gap: 10px;
+  }
+  .footer-links__sections {
+    margin-right: 15px;
+  }
+  .footer-links__social-icons {
+    flex-direction: column;
+  }
+}
+// 580
+@media (max-width: 580px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer_links {
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    .footer-links__sections {
+      margin-top: 20px;
+    }
+  }
+  .footer-links__social-icons {
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 40px;
   }
 }
